@@ -1,7 +1,12 @@
 package com.mprybicki.rfservice.model;
 
+import lombok.Getter;
+import lombok.ToString;
+
 import javax.validation.constraints.Min;
 
+@Getter
+@ToString(callSuper = true)
 public class RFData {
 
     double rssi;
