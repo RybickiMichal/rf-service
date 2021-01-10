@@ -1,7 +1,7 @@
-package com.mprybicki.rfservice.common.config;
+package com.mprybicki.rfservice.rfsensor.service;
 
-import com.mprybicki.rfservice.rfsensor.repository.RFSensorRepository;
 import com.mprybicki.rfservice.common.model.RFSensor;
+import com.mprybicki.rfservice.rfsensor.repository.RFSensorRepository;
 import com.mprybicki.rfservice.rfsensor.service.RFSensorService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,8 +21,9 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
     @Override
     public void run(String... args) {
         List<RFSensor> sensors = rfSensorService.getActiveRFSensors();
-        log.info("successfully downloaded " + sensors.size() + " sensors");
+        log.info("successfully downloaded sensors");
 
+        rfSensorService.setAreSensorsDownloaded(true);
         rfSensorRepository.saveAll(sensors);
     }
 }

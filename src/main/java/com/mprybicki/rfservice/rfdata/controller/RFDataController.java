@@ -15,7 +15,7 @@ public class RFDataController {
 
     private RFDataService rfDataService;
 
-    @PostMapping(value = "/RFData")
+    @PostMapping(value = "/rf-data")
     public RFData addRFData(@Valid @RequestBody RFData rfData) {
         return rfDataService.addRFData(rfData);
     }
