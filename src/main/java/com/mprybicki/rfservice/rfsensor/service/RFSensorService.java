@@ -56,6 +56,7 @@ public class RFSensorService {
                     break;
             }
         } else {
+            rfSensorRepository.deleteAll();
             List<RFSensor> sensors = getActiveRFSensors();
             log.info("successfully downloaded sensors");
 
@@ -72,7 +73,6 @@ public class RFSensorService {
     private void unregisterSensor(RFSensor rfSensorToUnregister) {
         rfSensorValidationService.validateUnregisterSensor(rfSensorToUnregister.getId());
         rfSensorRepository.delete(rfSensorToUnregister);
-        rfSensorRepository.findAll().forEach(rfSensor -> log.error(rfSensor.toString()));
         log.info("RF sensor unregistered " + rfSensorToUnregister);
     }
 
