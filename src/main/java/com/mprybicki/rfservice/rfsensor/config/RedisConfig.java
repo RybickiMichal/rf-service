@@ -1,8 +1,10 @@
 package com.mprybicki.rfservice.rfsensor.config;
 
-import org.springframework.context.annotation.*;
-import org.springframework.data.redis.connection.jedis.*;
-import org.springframework.data.redis.core.*;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 
 @Configuration
 public class RedisConfig {
