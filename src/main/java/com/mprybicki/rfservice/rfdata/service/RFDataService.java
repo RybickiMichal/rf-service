@@ -1,7 +1,7 @@
-package com.mprybicki.rfservice.service;
+package com.mprybicki.rfservice.rfdata.service;
 
-import com.mprybicki.rfservice.Repository.RFDataRepository;
-import com.mprybicki.rfservice.model.RFData;
+import com.mprybicki.rfservice.rfdata.repository.RFDataRepository;
+import com.mprybicki.rfservice.common.model.RFData;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

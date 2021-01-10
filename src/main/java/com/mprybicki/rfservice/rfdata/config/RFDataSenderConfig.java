@@ -1,6 +1,6 @@
-package com.mprybicki.rfservice.config;
+package com.mprybicki.rfservice.rfdata.config;
 
-import com.mprybicki.rfservice.model.RFData;
+import com.mprybicki.rfservice.common.model.RFData;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,9 +1,9 @@
-package com.mprybicki.rfservice.service;
+package com.mprybicki.rfservice.rfsensor.service;
 
 import com.google.gson.Gson;
-import com.mprybicki.rfservice.Repository.RFSensorClient;
-import com.mprybicki.rfservice.model.RFSensor;
-import com.mprybicki.rfservice.model.RFSensorDTO;
+import com.mprybicki.rfservice.rfsensor.repository.RFSensorClient;
+import com.mprybicki.rfservice.common.model.RFSensor;
+import com.mprybicki.rfservice.common.model.RFSensorDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Retryable;

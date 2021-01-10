@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.service;
+package com.mprybicki.rfservice.rfsensor.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;

@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.config;
+package com.mprybicki.rfservice.common.config;
 
 import com.google.gson.Gson;
 import org.springframework.context.annotation.Bean;

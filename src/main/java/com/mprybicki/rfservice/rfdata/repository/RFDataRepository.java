@@ -1,6 +1,6 @@
-package com.mprybicki.rfservice.Repository;
+package com.mprybicki.rfservice.rfdata.repository;
 
-import com.mprybicki.rfservice.model.RFData;
+import com.mprybicki.rfservice.common.model.RFData;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

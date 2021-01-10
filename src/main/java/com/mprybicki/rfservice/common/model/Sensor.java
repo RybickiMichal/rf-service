@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.model;
+package com.mprybicki.rfservice.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

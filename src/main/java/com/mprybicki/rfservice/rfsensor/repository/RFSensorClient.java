@@ -1,6 +1,6 @@
-package com.mprybicki.rfservice.Repository;
+package com.mprybicki.rfservice.rfsensor.repository;
 
-import com.mprybicki.rfservice.model.RFSensor;
+import com.mprybicki.rfservice.common.model.RFSensor;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

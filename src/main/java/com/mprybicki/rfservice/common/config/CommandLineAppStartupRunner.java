@@ -1,8 +1,8 @@
-package com.mprybicki.rfservice.config;
+package com.mprybicki.rfservice.common.config;
 
-import com.mprybicki.rfservice.Repository.RFSensorRepository;
-import com.mprybicki.rfservice.model.RFSensor;
-import com.mprybicki.rfservice.service.RFSensorService;
+import com.mprybicki.rfservice.rfsensor.repository.RFSensorRepository;
+import com.mprybicki.rfservice.common.model.RFSensor;
+import com.mprybicki.rfservice.rfsensor.service.RFSensorService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -24,6 +24,5 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
         log.info("successfully downloaded " + sensors.size() + " sensors");
 
         rfSensorRepository.saveAll(sensors);
-        rfSensorRepository.findAll().forEach(rfSensor -> System.out.println(rfSensor.toString()));
     }
 }

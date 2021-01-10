@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.config;
+package com.mprybicki.rfservice.rfsensor.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

@@ -1,6 +1,6 @@
-package com.mprybicki.rfservice.Repository;
+package com.mprybicki.rfservice.rfsensor.repository;
 
-import com.mprybicki.rfservice.model.RFSensor;
+import com.mprybicki.rfservice.common.model.RFSensor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.mprybicki.rfservice.service;
+package com.mprybicki.rfservice.rfdata.service;
 
 
-import com.mprybicki.rfservice.model.RFData;
+import com.mprybicki.rfservice.common.model.RFData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,7 +1,7 @@
-package com.mprybicki.rfservice.controller;
+package com.mprybicki.rfservice.rfdata.controller;
 
-import com.mprybicki.rfservice.model.RFData;
-import com.mprybicki.rfservice.service.RFDataService;
+import com.mprybicki.rfservice.common.model.RFData;
+import com.mprybicki.rfservice.rfdata.service.RFDataService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

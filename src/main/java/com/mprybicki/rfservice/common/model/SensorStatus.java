@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.model;
+package com.mprybicki.rfservice.common.model;
 
 public enum SensorStatus {
     ACTIVE, INACTIVE
