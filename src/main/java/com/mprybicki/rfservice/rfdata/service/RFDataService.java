@@ -13,7 +13,6 @@ public class RFDataService {
     private RFDataSenderService rfDataSenderService;
 
     public RFData addRFData(RFData rfData){
-        //TODO walidacja
         rfDataRepository.save(rfData);
         rfDataSenderService.send(rfData);
         return rfData;
