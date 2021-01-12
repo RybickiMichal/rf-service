@@ -1,4 +1,4 @@
-package com.mprybicki.rfservice.rfsensor.repository;
+package com.mprybicki.rfservice.rfsensor.client;
 
 import com.mprybicki.rfservice.common.model.RFSensor;
 import org.springframework.cloud.openfeign.FeignClient;

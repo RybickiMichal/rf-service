@@ -3,7 +3,7 @@ package com.mprybicki.rfservice.rfsensor.service;
 import com.google.gson.Gson;
 import com.mprybicki.rfservice.common.model.RFSensor;
 import com.mprybicki.rfservice.common.model.RFSensorDTO;
-import com.mprybicki.rfservice.rfsensor.repository.RFSensorClient;
+import com.mprybicki.rfservice.rfsensor.client.RFSensorClient;
 import com.mprybicki.rfservice.rfsensor.repository.RFSensorRepository;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
