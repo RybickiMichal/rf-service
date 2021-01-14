@@ -6,7 +6,7 @@ import lombok.ToString;
 import javax.validation.constraints.Min;
 
 @Getter
-@ToString(callSuper = true)
+@ToString
 public class RFData {
 
     @Min(0)
