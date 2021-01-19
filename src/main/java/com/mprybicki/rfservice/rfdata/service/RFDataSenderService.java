@@ -3,7 +3,6 @@ package com.mprybicki.rfservice.rfdata.service;
 
 import com.mprybicki.rfservice.common.model.RFData;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -15,11 +14,14 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 @Slf4j
 public class RFDataSenderService {
 
-    @Autowired
     private KafkaTemplate<String, RFData> kafkaTemplate;
 
     @Value("${kafka.rf.data.topic}")
     private String kafkaTopic;
+
+    public RFDataSenderService(KafkaTemplate<String, RFData> kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+    }
 
     public void send(RFData rfData) {
         ListenableFuture<SendResult<String, RFData>> future = kafkaTemplate.send(kafkaTopic, rfData);
